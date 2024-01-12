@@ -14,6 +14,33 @@ function projects() {
     {
       id: uuid(),
       description:
+      "Capstone Project. Many features for this project. Click Github to see more details about the project. ",
+      techStack: [
+        {
+          id: uuid(),
+          techName: "React Native",
+        },
+        {
+          id: uuid(),
+          techName: "Css",
+        },
+        {
+          id: uuid(),
+          techName: "Firebase",
+        },
+        {
+          id: uuid(),
+          techName: "GCP",
+        },
+      ],
+      image: tubigLogin,
+      projectName: "2big Web and Mobile App",
+      githubRepo: "https://github.com/jah09/2bigCustomerReporn",
+      liveDemo: "",
+    },
+    {
+      id: uuid(),
+      description:
         "Personal project. Just like a ToDo list, that can add daily routine. Edit the item and can delete. Understanding also the react hooks.",
       techStack: [
         {
@@ -49,33 +76,7 @@ function projects() {
       githubRepo: "https://github.com/jah09/jalida",
       liveDemo: "https://jah09.github.io/jalida/",
     },
-    {
-      id: uuid(),
-      description:
-        "Capstone Project. Many features for this project. Click Github to see more details about the project.  ",
-      techStack: [
-        {
-          id: uuid(),
-          techName: "React Native",
-        },
-        {
-          id: uuid(),
-          techName: "Css",
-        },
-        {
-          id: uuid(),
-          techName: "Firebase",
-        },
-        {
-          id: uuid(),
-          techName: "GCP",
-        },
-      ],
-      image: tubigLogin,
-      projectName: "2big Web and Mobile App",
-      githubRepo: "https://github.com/jah09/2bigCustomerReporn",
-      liveDemo: "",
-    },
+    
     {
       id: uuid(),
       description:
