@@ -1,0 +1,28 @@
+.imageContainer{
+    animation: zoom-in-zoom-out 1.5s ease-in-out;
+}
+@keyframes zoom-in-zoom-out{
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+.reactTyped{
+    animation: fadeInRight 2.5s ease-in-out;
+}
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+

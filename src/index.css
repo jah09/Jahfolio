@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: MontserratSemibold;
+  src: url(./fonts/Montserrat-SemiBold.ttf);
+}
+
+
+
+@font-face {
+  font-family: MontserratRegular;
+  src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: MontserratMedium;
+  src: url(./fonts/Montserrat-Medium.ttf);
+}
+
+
+@font-face {
+  font-family: RobotoMedium;
+  src: url(./fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: RobotoRegular;
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+
+.navbarLink:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #72787E;
+
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out, border-color 250ms ease-in-out;
+}
+.navbarLink.active:after,.navbarLink:hover:after {
+  transform: scaleX(1);
+  border-color: #72787E;
+}
+
+.navbarLinkMobile:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #72787E; 
+  
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out,border-color 250ms ease-in-out;
+
+  position: absolute;
+ 
+  left: 0;
+  width: 0;
+}
+.navbarLinkMobile.active:after,.navbarLinkMobile:hover:after {
+  transform: scaleX(1);
+  width: 21%;
+  border-color: #72787E;
+}
+.navbarLinkMobile {
+  position: relative;
+}
+
+/* 
+  --bgColor: #0d0502;
+  --textColor: #fdf5f2;
+  --CTAcolor: #ff8274;
+  --lessImportant: #d3fbd8;
+
+
+  /new 
+  text color - F1DFDF
+  bg- 000000
+  primary- BEBAB7
+  secondary-  111313
+  accent -72787E
+
+*/
+html{
+  scroll-behavior: smooth;
+}
+input,textarea{
+  outline :none;
+}  
+.toast-message{
+  margin-top: 4.5rem;
+}
+
+
+@layer base {
+  :root {
+    --text: #200e0e;
+    --background: #ffffff;
+    --primary: #484441;
+    --secondary: #eceeee;
+    --accent: #81878d;
+  }
+  .dark {
+    --text: #f1dfdf;
+    --background: #000000;
+    --primary: #bebab7;
+    --secondary: #111313;
+    --accent: #72787e;
+  }
+}
+.container-snap::-webkit-scrollbar {
+  display: none;
+}
+
+
+.active::after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #72787E;
+
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
