@@ -1,4 +1,4 @@
-# This is my portfolio project.
+# Simple portfolio project
  :arrow_upper_right: https://jahfolio.vercel.app/
 
 
