@@ -59,6 +59,16 @@ const About = () => {
       workExpControls.start("visible");
     }
   }, [isInView_workExp]);
+
+  //certifications
+  const certRef=useRef(null);
+  const isInView_Cert = useInView(certRef, { once: true });
+  const certControls = useAnimation();
+  useEffect(() => {
+    if (isInView_Cert) {
+      certControls.start("visible");
+    }
+  }, [isInView_Cert]);
   return (
     <div
       className="text-myfontcolor  container-lg mx-auto md:h-full dark:bg-backgroundcolor"
@@ -216,20 +226,15 @@ const About = () => {
                 <h1 className="font-montserratregular mt-2 text-md  tracking-wide leading-relaxed">
                   {exp.description}
                 </h1>
-                {/* <div className="flex justify-end  ">
-                <div className="border p-1 rounded-[4px] mt-5 border-accentcolor">
-                  <h1 className="font-montserratregular  text-sm">
-                    {exp.techStack}
-                  </h1>
-                </div>
-              </div> */}
+               
               </motion.div>
+
             ))}
           </div>
           <div className=" md:h-full  md:w-[60%] grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2  max-md:grid-cols-2">
             {myCertification.map((item) => (
               <motion.div
-              animate={workExpControls}
+              animate={certControls}
                 className="bg-backgroundcolor cursor-pointer hover:transition transition hover:-translate-y-1  hover:bg-secondarycolor border-secondarycolor border-2 rounded-md p-4 md:mx-auto mt-2 animate glow delay-3"
                 transition={{ duration: 2.5, ease: "easeInOut" }}
               >
