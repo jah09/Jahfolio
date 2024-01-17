@@ -231,11 +231,14 @@ const About = () => {
 
             ))}
           </div>
-          <div className=" md:h-full  md:w-[60%] grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2  max-md:grid-cols-2">
+          <div className=" md:h-full  md:w-[60%] grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2  max-md:grid-cols-2" ref={certRef}>
             {myCertification.map((item) => (
               <motion.div
-              animate={certControls}
+             
                 className="bg-backgroundcolor cursor-pointer hover:transition transition hover:-translate-y-1  hover:bg-secondarycolor border-secondarycolor border-2 rounded-md p-4 md:mx-auto mt-2 animate glow delay-3"
+               
+                animate={certControls}
+                initial="hidden"
                 transition={{ duration: 2.5, ease: "easeInOut" }}
               >
                 <a onClick={() => handleClickImage(item)}>
