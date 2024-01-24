@@ -86,7 +86,7 @@ const About = () => {
           animate={aboutmeControls}
           transition={{ duration: 2.5, ease: "easeInOut" }}
         >
-          <h1 className="text-3xl font-robotomedium lg:text-red-900">About me</h1>
+          <h1 className="text-3xl font-robotomedium lg:mt-20">About me</h1>
         </motion.div>
 
         <motion.div
