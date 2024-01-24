@@ -35,18 +35,20 @@ const Navbar = () => {
         } */
   return (
     <div className="container-lg text-myfontcolor w-full h-20 mx-auto px-4 items-center  flex justify-between shadow-secondarycolor shadow-md sticky top-0 max-sm:bg-backgroundcolor  z-50 dark:bg-backgroundcolor bg-backgroundcolor ">
-      <div className="w-full cursor-pointer">
-        <a href="">
+      <div className="w-full ">
+       
         <img
+        onClick={()=>window.location.pathname="/"}
           src={MyPortfolioLogo}
           alt="myportfoliologo"
-          className="h-14 w-14 "
+          className="h-14 w-14 cursor-pointer"
+        
         />
-        </a>
+        
        
       </div>
       <div
-        className="text-myfontcolor p-2 mb-2 mx-4 cursor-pointer"
+        className="text-myfontcolor p-2 mb-2 mx-4 cursor-pointer "
         onClick={toggleDarkMode}
       >
       

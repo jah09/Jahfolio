@@ -61,7 +61,7 @@ const Projects = () => {
       className=" text-myfontcolor  container-lg mx-auto tracking-wide leading-relaxed dark:bg-backgroundcolor"
       id="project"
     >
-      <motion.div className="p-8 mt-10  w-48"
+      <motion.div className="p-8 mt-20  w-48"
         initial={{opacity:0, x:-20}}
        
         transition={{ duration: 2.5, ease: "easeInOut" }}

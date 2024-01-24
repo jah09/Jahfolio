@@ -11,8 +11,8 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import ScrollToTop from './components/ScrollToTop';
-
-
+import TechnologyUsed from "./components/TechnologyUsed";
+import WorkExperience from "./components/WorkExperience";
 import {ToastContainer,toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 export const AppContext=createContext();
@@ -50,8 +50,11 @@ function App() {
         </Routes> */}
         <Home />
         <About/>
+        <TechnologyUsed/>
+        <WorkExperience/>
         <Projects/>
         <Contact/>
+       
         {/* <Footer/> */}
       </Router>
       </AppContext.Provider>

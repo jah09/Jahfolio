@@ -19,14 +19,6 @@ const About = () => {
     window.open(MyResumePdf);
   };
 
-  const handleClickSocialMedia = (skill) => {
-    window.open(skill.techLink);
-  };
-
-  //handle click of the image in certification
-  const handleClickImage = (item) => {
-    window.open(item.certificationImage, "_blank", "noreferrer");
-  };
 
   //about me
   const aboutMeRef = useRef(null); //ref for about me
@@ -69,15 +61,16 @@ const About = () => {
       certControls.start("visible");
     }
   }, [isInView_Cert]);
+  //dark:bg-backgroundcolor
   return (
     <div
-      className="text-myfontcolor  container-lg mx-auto md:h-full dark:bg-backgroundcolor"
+      className="text-myfontcolor  container-lg mx-auto md:h-full  "
       id="about"
     >
       {/* Main about */}
       <section ref={aboutMeRef}>
         <motion.div
-          className="p-8 mt-60"
+          className="p-8 mt-[15%] "
           variants={{
             hidden: { opacity: 0, x: -20 },
             visible: { opacity: 1, x: 0 },
@@ -86,7 +79,7 @@ const About = () => {
           animate={aboutmeControls}
           transition={{ duration: 2.5, ease: "easeInOut" }}
         >
-          <h1 className="text-3xl font-robotomedium lg:mt-40">About me</h1>
+          <h1 className="text-3xl font-robotomedium ">About me</h1>
         </motion.div>
 
         <motion.div
@@ -145,7 +138,7 @@ const About = () => {
       </section>
 
       {/* Skills/Technlogies I use */}
-      <section
+      {/* <section
         id="technologyUsed "
         ref={techUsedRef}
         className=" h-full lg:h-[450px]  md:h-full"
@@ -169,7 +162,7 @@ const About = () => {
               className="hover:transition transition hover:-translate-y-1  bg-backgroundcolor border-secondarycolor border-2 hover:bg-secondarycolor rounded-md p-4 flex  items-center flex-col duration-150 animate glow delay-3 w-28 h-36 "
               key={skill.id}
             >
-              {/* {skill.techName} */}
+            
               <div>
                 <img src={skill.techIcon} alt="techUsedIcon" />
               </div>
@@ -182,10 +175,10 @@ const About = () => {
             </motion.div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Work Experience */}
-      <section id="workExperience " ref={workExpRef} className="mt-40 ">
+      {/* <section id="workExperience " ref={workExpRef} className="mt-40 ">
         <motion.div
           className="p-8 mt-10 "
           variants={{
@@ -255,7 +248,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

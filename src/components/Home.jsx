@@ -39,7 +39,7 @@ const Home = () => {
         </motion.div>
         <motion.div className="my-2 md:p-8 mx-3"
          initial={{ opacity: 0, x: 20 }}
-         animate={{ opacity: 1, x: 0 }}
+         animate={{ opacity: 1, x: 0 }}   
          transition={{ duration: 2.5, ease: "easeInOut" ,delay:0.25}}
         >
           <ReactTyped
