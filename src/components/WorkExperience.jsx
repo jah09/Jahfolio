@@ -1,15 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import Experience from "../data/workexperiences";
-import Certification from "../data/certificationData";
+
 import { motion, useInView, useAnimation } from "framer-motion";
 import Certifications from "./Certifications";
 const WorkExperience = () => {
   const myExperiences = Experience(); //assign the function to a variable
-  const myCertification = Certification();
-  //handle click of the image in certification
-  const handleClickImage = (item) => {
-    window.open(item.certificationImage, "_blank", "noreferrer");
-  };
+
   //work experience
   const workExpRef = useRef(null);
   const isInView_workExp = useInView(workExpRef, { once: true }); //if mo enter sa viewport, mo execute once
@@ -21,18 +17,9 @@ const WorkExperience = () => {
     }
   }, [isInView_workExp]);
 
-  //certifications
-  const certRef = useRef(null);
-  const isInView_Cert = useInView(certRef, { once: true });
-  const certControls = useAnimation();
-  useEffect(() => {
-    if (isInView_Cert) {
-      certControls.start("visible");
-    }
-  }, [isInView_Cert]);
-  //dark:bg-backgroundcolor
+
   return (
-    <div className="text-myfontcolor  container-lg mx-auto md:h-full ">
+    <div className="text-myfontcolor  container-lg mx-auto md:h-full dark:bg-backgroundcolor">
       <section id="workExperience " ref={workExpRef} className="mt-[10%] ">
         <motion.div
           className="p-8 mt-10 "
@@ -77,32 +64,10 @@ const WorkExperience = () => {
               </motion.div>
             ))}
           </div>
-          <Certifications/>
-          {/* <div
-            className=" md:h-full  md:w-[60%] grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2  max-md:grid-cols-2"
-          
-          >
-            {myCertification.map((item) => (
-              <motion.div
-              ref={certRef}
-                className="bg-backgroundcolor cursor-pointer hover:transition transition hover:-translate-y-1  hover:bg-secondarycolor border-secondarycolor border-2 rounded-md p-4 md:mx-auto mt-2 animate glow delay-3"
-                animate={certControls}
-                initial="hidden"
-                transition={{ duration: 2.5, ease: "easeInOut" }}
-              >
-                <a onClick={() => handleClickImage(item)}>
-                  <img
-                    src={item.certificationImage}
-                    className=" transition-all duration-500 transform hover:scale-[104%] rounded-md"
-                  />
-                </a>
 
-                <h1 className="mt-2 font-montserratmedium text-lg md:text-xl md:text-center ">
-                  {item.certificationName}
-                </h1>
-              </motion.div>
-            ))}
-          </div> */}
+          <Certifications />
+
+
         </div>
       </section>
     </div>

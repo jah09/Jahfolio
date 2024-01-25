@@ -17,9 +17,9 @@ const TechnologyUsed = () => {
       techUsedControls.start("visible");
     }
   }, [isInView_techUsed]);
-  //dark:bg-backgroundcolor
+  //
   return (
-    <div className="text-myfontcolor  container-lg mx-auto md:h-full ">
+    <div className="text-myfontcolor  container-lg mx-auto md:h-full dark:bg-backgroundcolor">
       <section
         id="technologyUsed "
         ref={techUsedRef}

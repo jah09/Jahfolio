@@ -8,8 +8,11 @@ function workexperiences() {
       companyName:"Willies Web Design",
       companyAddress: "Cebu City, 6000",
       position:"Mobile Developer",
-      dateHired:"July 2023- Present",
-      description:"Develop mobile application using Android Studio. Convert UI design from Figma into codes. And perform other tasks.",
+      dateHired:"July 2023- Jan 2024",
+      description:'Develop mobile application using Android Studio. Convert UI design from Figma into codes.And Perform other tasks not related to coding.',
+      
+      
+    
       techStack:"Android Studio"
     },
     // {
