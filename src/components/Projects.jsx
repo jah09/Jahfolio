@@ -70,10 +70,10 @@ const Projects = () => {
       >
         <h1 className="text-3xl font-robotomedium ">Projects</h1>
       </motion.div>
-      <div className="p-8 max-lg:grid-cols-4 grid grid-rows-4 grid-cols-1   max-md:grid-cols-1   gap-4 md:grid-cols-3 md:grid-rows-1  ">
+      <div className="p-8 max-lg:grid-cols-4 grid grid-rows-4 grid-cols-1   max-md:grid-cols-1   gap-4 md:grid-cols-2 lg:grid-cols-3  md:grid-rows-1  sm:grid-cols-1">
         {projects.map((project) => (
           <motion.div
-            className=" hover:transition transition hover:-translate-y-1 border-secondarycolor border-2 hover:bg-secondarycolor  max-md:w-[75%] max-md:mx-auto max-sm:w-[100%]  p-4 rounded-md group animate glow delay-3"
+            className=" hover:transition transition hover:-translate-y-1 border-secondarycolor border-2 hover:bg-secondarycolor  md:w-[102%] sm:w-[85%] max-md:mx-auto max-sm:w-[95%]  p-4 rounded-md group animate glow delay-3  md:bg-red-900 lg:bg-green-900 max-sm:bg-blue-900 sm:border-green-400 "
             key={project.id}
            
           >
@@ -100,7 +100,7 @@ const Projects = () => {
               <div className="flex ">
                 {project.techStack.map((proj) => (
                   <h1
-                    className="bg-secondarycolor text-myfontcolor m-1 p-1 rounded-md text-sm font-montserratmedium group-hover:bg-backgroundcolor"
+                    className="bg-secondarycolor text-myfontcolor m-1 p-1 rounded-md text-sm font-montserratmedium group-hover:bg-backgroundcolor max-sm:text-sm md:text-center  max-sm:text-center sm:text-center"
                     key={proj.id}
                   >
                     {proj.techName}

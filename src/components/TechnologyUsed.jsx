@@ -36,6 +36,7 @@ const TechnologyUsed = () => {
           transition={{ duration: 2.5, ease: "easeInOut" }}
         >
           <h3 className="text-3xl font-robotomedium">Technologies I used</h3>
+          
         </motion.div>
         <div className=" text-myfontcolor p-8 md:grid-cols-6 lg:grid-cols-8 max-md:grid-cols-4 gap-2 grid grid-rows-4 max-sm:grid-cols-3  md:gap-2   ">
           {mySkills.map((skill) => (
@@ -48,7 +49,7 @@ const TechnologyUsed = () => {
                 <img src={skill.techIcon} alt="techUsedIcon" />
               </div>
 
-              <div className="font-montserratregular text-lg md:text-xl font-bold  cursor-pointer mt-2 text-center ">
+              <div className="font-montserratregular text-lg md:text-xl font-bold  cursor-pointer mt-2 text-center max-sm:text-md">
                 <a onClick={() => handleClickSocialMedia(skill)}>
                   {skill.techName}
                 </a>

@@ -35,7 +35,7 @@ const Home = () => {
          initial={{ scale: 1 }}
          animate={{ scale: [1, 1.5, 1] }}
          transition={{ duration: 1.5, ease: "easeInOut",delay:0.25 }}>
-        <img src={HomeImage} alt="homeImage" className="md:w-80  md:h-80  w-80 h-80 rounded-full border-secondarycolor border-8 md:rounder-full md:border-8  " />
+        <img src={HomeImage} alt="homeImage" className="md:w-80  md:h-80  w-80 h-80 rounded-full border-secondarycolor border-8 md:rounder-full md:border-8  object-fit:cover" />
         </motion.div>
         <motion.div className="my-2 md:p-8 mx-3"
          initial={{ opacity: 0, x: 20 }}

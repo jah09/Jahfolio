@@ -36,7 +36,7 @@ const Certifications = () => {
               />
             </a>
 
-            <h1 className="mt-2 font-montserratmedium text-lg md:text-xl md:text-center ">
+            <h1 className="mt-2 font-montserratmedium max-sm:text-md max-sm:text-center text-lg md:text-xl md:text-center max-md:text-center lg:text-center">
               {item.certificationName}
             </h1>
           </motion.div>

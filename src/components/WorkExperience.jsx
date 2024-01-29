@@ -17,7 +17,6 @@ const WorkExperience = () => {
     }
   }, [isInView_workExp]);
 
-
   return (
     <div className="text-myfontcolor  container-lg mx-auto md:h-full dark:bg-backgroundcolor">
       <section id="workExperience " ref={workExpRef} className="mt-[10%] ">
@@ -66,8 +65,6 @@ const WorkExperience = () => {
           </div>
 
           <Certifications />
-
-
         </div>
       </section>
     </div>

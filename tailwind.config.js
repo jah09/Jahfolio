@@ -27,7 +27,7 @@ export default {
         robotoregular: ["RobotoRegular", "sans-serif"],
         robotomedium: ["RobotoMedium", "sans-serif"],
       },
-    
+     
     },
   },
   plugins: [],

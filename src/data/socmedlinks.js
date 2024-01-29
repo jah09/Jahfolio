@@ -3,11 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import {BsTwitter,BsLinkedin,BsGithub} from 'react-icons/bs';
 
 const socmedlinks  = [
-    {
-      id:uuidv4(),
-      url: "",
-      icon: BsTwitter,
-    },
+    
     {
       id:uuidv4(),
       url: "https://www.linkedin.com/in/jeahael-suhot-268314280",

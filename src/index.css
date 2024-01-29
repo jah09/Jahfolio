@@ -71,6 +71,11 @@
   position: relative;
 }
 
+.navbarLinkMobile.active:after,.navbarLinkMobile:hover:after {
+  transform: scaleX(1);
+  border-color: #72787E;
+}
+
 /* 
   --bgColor: #0d0502;
   --textColor: #fdf5f2;

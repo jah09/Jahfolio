@@ -117,7 +117,7 @@ const Contact = () => {
                 </div>
               </div>
             </form> */}
-            <h1 className="text-2xl font-semibold font-montserratregular">Want to get in touch? We'd love to hear from you. Here's how you can reach us.</h1>
+            <h1 className="text-2xl font-semibold font-montserratregular">Want to get in touch? I'd love to hear from you. Here's how you can reach me.</h1>
              <div className="p-2 mt-4">
               {myContactDetails.map((contactDetail) => (
                 <div className="   flex p-2   " key={contactDetail.id}>
