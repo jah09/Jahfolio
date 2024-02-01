@@ -43,13 +43,13 @@ const Home = () => {
           />
         </motion.div>
         <motion.div
-          className="my-2 md:p-8 mx-3"
+          className="my-4 md:p-8 mx-3"
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 2.5, ease: "easeInOut", delay: 0.25 }}
         >
           <ReactTyped
-            className="text-5xl font-montserratmedium"
+            className="text-5xl font-montserratmedium max-sm:text-[40px]"
             strings={["Hello, I'm  Jah!"]}
             typeSpeed={120}
             backSpeed={140}
@@ -76,7 +76,7 @@ const Home = () => {
             
             </div> */}
             <ScrollLink
-              className="rounded-lg h-12 w-36  text-backgroundcolor items-center font-montserratmedium flex justify-around bg-primarycolor cursor-pointer transition ease-in-out delay-150  hover:-translate-x-1 hover:scale-110  duration-300 text-lg md:text-xl "
+              className="rounded-lg h-12 w-36  text-backgroundcolor items-center font-montserratmedium flex justify-around bg-primarycolor cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-100 hover:bg-backgroundcolor hover:text-myfontcolor hover:border-primarycolor hover:border  duration-300 text-lg md:text-xl "
               to="project"
               spy={true}
               smooth={true}
@@ -86,15 +86,15 @@ const Home = () => {
               <button className=" p-2 tracking-wide">Projects</button>
             </ScrollLink>
 
-            <ScrollLink 
-            to="contact"
+            <ScrollLink
+              to="contact"
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
-            className="rounded-lg h-12 w-36 text-myfontcolor items-center font-montserratmedium flex justify-around border border-primarycolor hover:bg-primarycolor hover:text-secondarycolor cursor-pointer transition ease-in-out delay-150  hover:-translate-x-1 hover:scale-110  duration-300 mx-6 text-lg md:text-xl ">
+              className="rounded-lg h-12 w-36 text-myfontcolor items-center font-montserratmedium flex justify-around border border-primarycolor hover:bg-primarycolor hover:text-secondarycolor cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-100  duration-300 mx-6 text-lg md:text-xl "
+            >
               <button className=" p-2 tracking-wide">Contact me</button>
-              
             </ScrollLink>
           </div>
         </motion.div>
