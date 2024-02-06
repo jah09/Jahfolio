@@ -34,7 +34,7 @@ const Contact = () => {
     }
   }, [isInView]);
   return (
-    <div ref={ref} className="text-myfontcolor   container-lg mx-auto dark:bg-backgroundcolor" id="contact">
+    <div ref={ref} className="text-myfontcolor  container-lg mx-auto dark:bg-backgroundcolor" id="contact">
      
         <motion.div className="p-8 mt-10"
            variants={{
@@ -44,7 +44,7 @@ const Contact = () => {
           initial="hidden"
           animate={mainControls}
           transition={{ duration: 2.5, ease: "easeInOut" }}>
-          <h1 className="text-3xl font-robotomedium">Get in touch</h1>
+          <h1 className="text-3xl font-robotomedium mt-10">Get in touch</h1>
         </motion.div>
 
         <div className="p-8  md:flex md:justify-evenly  ">

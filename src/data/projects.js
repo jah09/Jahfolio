@@ -8,6 +8,7 @@ import tubigLogin from '../assets/projectsImage/tubigloginimage.png';
 import garboogleLoginImage from '../assets/projectsImage/Garboogle_Login_Activity.png';
 import newSurgeImage from '../assets/projectsImage/Newsurge_LandingActivity.png'
 import dailyAgendaImage from '../assets/projectsImage/DailyAgenda_Login_Activity.png';
+import chuckJokesImage from '../assets/projectsImage/chuckJokes.png';
 function projects() {
   // id:unique_id,
   const projects = [
@@ -75,6 +76,29 @@ function projects() {
       projectName: "JalidaLand",
       githubRepo: "https://github.com/jah09/jalida",
       liveDemo: "https://jah09.github.io/jalida/",
+    },
+    {
+      id: uuid(),
+      description:
+        "Practice project. Generates a random jokes from Chuck Norries API. I used Tanstack Query to understand how to it works.",
+      techStack: [
+        {
+          id: uuid(),
+          techName: "ReactJs",
+        },
+        {
+          id: uuid(),
+          techName: "Tailwind",
+        },
+        {
+          id: uuid(),
+          techName: "Tanstack Query",
+        },
+      ],
+      image: chuckJokesImage,
+      projectName: "Random Jokes",
+      githubRepo: "https://github.com/jah09/randomjokes",
+      liveDemo: "https://jah09.github.io/randomjokes/",
     },
     
     {
